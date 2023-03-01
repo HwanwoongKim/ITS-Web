@@ -42,7 +42,8 @@ public class MemberController {
     @GetMapping("post/{id}")
     public String showContents(Model model, @PathVariable("id") Long id) {
         Optional<Member> members = memberService.findOne(id);
-        model.addAttribute("member", members);
+        Member member = members.get();
+        model.addAttribute("member", member);
         return "post/postContents";
     }
 
