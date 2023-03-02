@@ -1,9 +1,9 @@
 package hello.hellospring.domain;
 
-public class Member {
+public class Posts {
 
     private Long id;
-    private String name;
+    private String title;
     private String contents;
 
     public String getContents() {
@@ -22,11 +22,11 @@ public class Member {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getTitle() {
+        return title;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setTitle(String title) {
+        this.title = title;
     }
 }

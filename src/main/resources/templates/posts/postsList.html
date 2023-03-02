@@ -10,9 +10,9 @@
           <th>이름</th> </tr>
         </thead>
         <tbody>
-        <tr th:each="member : ${members}">
-          <td th:text="${member.id}"></td>
-          <a th:href="@{/post/{id}(id=${member.id})}" th:text="${member.name}"></a>
+        <tr th:each="post : ${posts}">
+          <td th:text="${post.id}"></td>
+          <a th:href="@{/posts/{id}(id=${post.id})}" th:text="${post.title}"></a>
         </tr>
         </tbody>
       </table>
