@@ -6,6 +6,16 @@ public class Posts {
     private String title;
     private String contents;
 
+    private String time;
+
+    public String getTime() {
+        return time;
+    }
+
+    public void setTime(String time) {
+        this.time = time;
+    }
+
     public String getContents() {
         return contents;
     }
